@@ -1,14 +1,13 @@
 import React, { useEffect, useReducer, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import store from "../Store/Store";
-import exerciseReducer from "../Reducer/ExerciceTrackReducer";
+
 import {
   addExercise,
   fetchExercise,
   removeExercise,
 } from "../action/exerciseAction";
 import Links from "./Links";
-import Navbar from "./Navbar";
 
 const cardStyle = {
   backgroundColor: "#272829",
@@ -173,7 +172,6 @@ const Exercises = () => {
           ))
         )}
       </section>
-      <Navbar />
     </div>
   );
 };

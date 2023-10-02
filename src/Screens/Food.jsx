@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import store from "../Store/Store";
 import { addFood, fetchFood, removeFood } from "../action/foodAction";
 import Links from "./Links";
-import Navbar from "./Navbar";
 
 const cardStyle = {
   backgroundColor: "#272829",
@@ -178,7 +177,6 @@ const Food = () => {
           </div>
         ))}
       </section>
-      <Navbar />
     </div>
   );
 };
