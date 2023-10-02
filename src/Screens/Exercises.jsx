@@ -59,6 +59,7 @@ const Exercises = () => {
     setShowExerciseForm(false);
     setLoading(false);
   };
+  console.log(exerciseType);
 
   // to hanndle click  go back click
   const handleGoBack = () => {
@@ -113,7 +114,7 @@ const Exercises = () => {
                 name="exerisetype"
                 id=""
               >
-                <option selected value="1000 kcal">
+                <option value="1000 kcal" selected>
                   Cardio
                 </option>
                 <option value="500 kcal">Weight-training</option>
