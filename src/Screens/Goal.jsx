@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { AddGoal, fetchGoals, removeGoal } from "../action/goalActions";
 import Links from "./Links";
+import Navbar from "./Navbar";
 
 const cardStyle = {
   backgroundColor: "#272829",
@@ -192,6 +193,7 @@ const Goal = () => {
           </div>
         ))}
       </section>
+      <Navbar />
     </div>
   );
 };

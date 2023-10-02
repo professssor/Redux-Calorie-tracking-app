@@ -8,6 +8,7 @@ import {
   removeExercise,
 } from "../action/exerciseAction";
 import Links from "./Links";
+import Navbar from "./Navbar";
 
 const cardStyle = {
   backgroundColor: "#272829",
@@ -172,6 +173,7 @@ const Exercises = () => {
           ))
         )}
       </section>
+      <Navbar />
     </div>
   );
 };

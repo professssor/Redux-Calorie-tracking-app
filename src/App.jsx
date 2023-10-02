@@ -6,6 +6,7 @@ import { fetchFood } from "./action/foodAction";
 import { stateAppropriateAction } from "./helper/reduceHelper";
 import { fetchGoals } from "./action/goalActions";
 import Links from "./Screens/Links";
+import Navbar from "./Screens/Navbar";
 
 function App() {
   const dispatch = useDispatch();
@@ -84,6 +85,7 @@ function App() {
           )}
         </h2>
       </div>
+      <Navbar />
     </div>
   );
 }
