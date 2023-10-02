@@ -70,9 +70,9 @@ function App() {
         <hr />
         <h2>
           Total Calories Remaining:{" "}
-          {exercises.length === 0 ||
-          goals.length === 0 ||
-          foods.length === 0 ? (
+          {exercises.length >=0 ||
+          goals.length >=0 ||
+          foods.length >=0 ? (
             <span style={highlightStyle}>
               {stateAppropriateAction(goals, "goal") -
                 stateAppropriateAction(foods, "foods") -
